@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>TITAN ESCAPE - Endless Runner</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+</head>
+<body>
+    <div id="ui">
+        <div id="hud">
+            <div>Score: <span id="score">0</span></div>
+            <div>Distance: <span id="distance">0</span>m</div>
+            <div>Fuel: <span id="fuel">100</span>%</div>
+            <div>High Score: <span id="high-score">0</span></div>
+        </div>
+
+        <div id="start-screen">
+            <h1>TITAN ESCAPE</h1>
+            <p>Escape the Giant Titan</p>
+            <button onclick="startGame()">PLAY</button>
+            <p>Swipe / Arrows • Space=Jump • Down=Slide</p>
+        </div>
+
+        <div id="game-over" style="display:none;">
+            <h1>GAME OVER</h1>
+            <p>Score: <span id="final-score">0</span></p>
+            <p>Distance: <span id="final-distance">0</span>m</p>
+            <p>High Score: <span id="final-high-score">0</span></p>
+            <button onclick="restartGame()">RESTART</button>
+        </div>
+    </div>
+    <canvas id="game"></canvas>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
